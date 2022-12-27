@@ -1,10 +1,10 @@
-export interface Return {
+export interface Return<T> {
   desc: string;
   code: number;
   title: string;
   extra: string;
   data: {
-    list: Article[];
+    list: T[];
   };
 }
 
